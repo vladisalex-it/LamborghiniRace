@@ -1,3 +1,12 @@
+
+const menuBtnElement = document.querySelector('#menuBtn')
+const menuMobileListElement = document.querySelector('#menuMobileList')
+
+menuBtnElement.addEventListener('click', function() {
+  menuMobileListElement.classList.toggle('menu-open')
+})
+
+
 const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 2,
